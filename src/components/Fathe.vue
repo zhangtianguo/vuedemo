@@ -8,7 +8,7 @@
     <button @click="skip()">页面跳转传值</button>
     <button @click="provideInject()">提供/注入传值</button>
     <!--这个是子组件-->
-    <children ref="children" v-model="vModalVal" :content="childrenVal"> </children>
+    <!--<children ref="children" v-model="vModalVal" :content="childrenVal"> </children>-->
 
     <div>
       {{this.injectVal}}
