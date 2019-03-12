@@ -2,7 +2,7 @@
     <div>
     <div @click="open()">这个页面是父组件</div>
     {{userInfo}}
-    {{userInfo2}}
+    <!--{{userInfo2}}-->
     
     <!--这个是子组件-->
     <children ref="children" @isShowDialogEvent="close()" title="提示">
