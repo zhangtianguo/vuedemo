@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-      msg: '商品详情',
+      msg: '商品详情',     
       dataList: [],
       params:{ 
         
@@ -28,6 +28,13 @@ export default {
 
     this.getData()
     // this.getData2()
+
+
+    var myDate = new Date(); 
+    var chineseStr = '日一二三四五六'
+    var day = '星期'+chineseStr[myDate.getDay()]
+    console.log(day)
+
   },
   methods: {
     getData(){
@@ -40,6 +47,8 @@ export default {
     //     this.dataList = res.data.articles
     //   })
     // },
+
+
   }
  
 }
